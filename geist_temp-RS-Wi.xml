@@ -1,0 +1,36 @@
+<geistenv-RS-Wi>
+	<name>Get Geist Environmental RS-Wi Information</name>
+	<description>Get SNMP based Environmental info from Geist RS-Wi</description>
+	<index_order>Index</index_order>
+	<index_order_type>numeric</index_order_type>
+	<oid_index>.1.3.6.1.4.1.21239.6.2.2.1.1</oid_index>
+
+	<fields>
+		<Index>
+			<name>Index</name>
+			<source>index</source>
+			<direction>input</direction>
+		</Index>
+		<WirelessSensorName>
+			<name>Name</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>input</direction>
+			<oid>.1.3.6.1.4.1.21239.6.2.2.1.14</oid>
+		</WirelessSensorName>
+		<WirelessSensorTempF>
+			<name>Temperature</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>output</direction>
+			<oid>.1.3.6.1.4.1.21239.6.2.2.1.10</oid>
+		</WirelessSensorTempF>
+		<WirelessSensorAge>
+			<name>Temperature</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>output</direction>
+			<oid>.1.3.6.1.4.1.21239.6.2.2.1.12</oid>
+		</WirelessSensorAge>
+	</fields>
+</geistenv-RS-Wi>
